@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Com Sci Fundamentals Cheat Sheet</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Com Sci Fundamentals Cheat Sheet</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <!-- <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form> -->
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Hello, world!</h1>
+        <p>This is a collection of key points over data structures. </p>
+        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <h3>Data Structures</h3>
+      <table class="table table-bordered table-striped">
+      	<thead>
+      		<th>Structure</th>
+      		<th width="300px">Description</th>
+      		<th>Uses</th>
+      		<th>Pitfalls</th>
+      		</thead>
+      		<tbody>
+      		<tr>
+	      		<td>
+	      			Binary Tree<br/><a href="http://en.wikipedia.org/wiki/Binary_tree">wiki</a>
+	      		</td>
+	      		<td>
+	      			A tree in which each node has up to two children.
+	      		</td>
+	      		<td></td>
+	      		<td></td>
+	      	</tr>
+	      	<tr>
+				<td>Binary Search Tree<br/><a href="http://en.wikipedia.org/wiki/Binary_search_tree">wiki</a></td>
+				<td>A specialized binary tree in which the all left children of a node are less than or equal to that node and aill right children of the node are greater than or equal to the node.</td>
+				<td></td>
+				<td></td>
+      		</tr>
+      		<tr>
+				<td>Heap</td>
+				<td>A specialized tree in which the relation between parent A and child B are applied to all nodes in the heap</td>
+				<td></td>
+				<td></td>
+      		</tr>
+			<tr>
+				<td>Min Heap</td>
+				<td>Each node is greater than or equal to its parent's value, with the minimum value in the tree at the root.</td>
+				<td></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>Max Heap</td>
+				<td>Each node is less than or equal to its parent's value, with the maximum value at the root of the tree.</td>
+				<td></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>Hash Table</td>
+				<td>A structure that maps keys to values across an array of buckets. The location where values are stored is determined by a hashing algorithm performed on the key.</td>
+				<td></td>
+				<td>
+				<ul>
+					<li>
+						O(n) time to resize table.
+					</li>
+					<li>
+						Hashes should be on a unique value (not zeros)
+					</li>
+					<li>
+						If object hashes change, then their keys break
+					</li>
+					<li>
+						Does not keep natural order
+					</li>
+				</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>B-Tree<br><a href="http://en.wikipedia.org/wiki/B-tree">wiki</a></td>
+				<td>The B-tree is a generalization of a binary search tree in that a node can have more than two children.</td>
+				<td>It is commonly used in databases and filesystems.</td>
+				<td><a href="http://www.semaphorecorp.com/btp/b11.html">Not as useful in areas where files do not change often</a></td>
+			</tr>
+      		</tbody>
+      		</table>
+
+      <hr>
+
+
+
+     
+<h3>Sorting Algorithms - <a href="http://www.sorting-algorithms.com/">beautiful algorithms</a></h3>
+<table class="table table-bordered table-striped">
+<thead>
+<tr>
+<td>
+Sort
+</td>
+<td>
+Avg Runtime
+</td>
+<td width="300px">
+Description
+</td>
+<td>
+Use Cases
+</td>
+<td>
+Pitfalls
+</td>
+</thead>
+<tbody>
+	<tr>
+		<td>Mergesort<br/><a href="http://en.wikipedia.org/wiki/Merge_sort">wiki</a></td>
+		<td>O(nlogn)</td>
+		<td>Merges already sorted lists into a new sorted list. Compares every two elements, then every four, and so on.
+		</td>
+		<td>
+		</td>
+		<td>
+		</td>
+	</tr>
+</tbody>
+</table>
+<hr>
+
+
+<h3>Runtimes</h3>
+<table class="table table-bordered table-striped">
+<thead>
+<tr>
+<td>
+Runtime
+</td>
+<td>
+Name
+</td>
+<td width="300px">
+Description
+</td>
+<td>
+Use Cases
+</td>
+</thead>
+<tbody>
+	<tr>
+		<td>
+			O(1)
+		</td>
+		<td>
+			constant
+		</td>
+		<td>
+			The algorithm always take about the same amount of time, regardless of the size of the input. 
+		</td>
+		<td>
+			inserting an element onto the front of a linked list <br/>
+			popping from or pushing onto a stack	<br/>	
+			retrieving the nth element of an array<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			O(log n)
+		</td>
+		<td>
+			logarithmic
+		</td>
+		<td>
+			 As the size of the input increases by a factor of n, the running time increases by a factor of the logarithm of n.
+		</td>
+		<td>
+			Algorithms which search through ordered lists or binary trees <br/>
+			Operations on heaps<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			O(n)
+		</td>
+		<td>
+			linear
+		</td>
+		<td>
+			The amount of time to run the algorithm is proportional to the size of the input.	
+		</td>
+		<td>
+			searching through an unordered list <br/>
+			incrementing every element of an array <br/>
+			calculating fibonacci numbers using dynamic programming <br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			O(n log n)
+		</td>
+		<td>
+		linearithmic, loglinear
+		</td>
+		<td>
+		Increases in running time proportionate to the size of the input times the logarithm of the size of the input.  
+		</td>
+		<td>
+			mergesort<br/>
+			quicksort<br/>
+			heapsort<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			O(n^2)
+		</td>
+		<td>
+		quadradic
+		</td>
+		<td>
+			 Whenever you increase the size of the input by a factor of n, the running time increases by a factor of n2.
+		</td>
+		<td>
+			Insertion sort<br>
+			Bubble sort<br>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			O(n^c)
+		</td>
+		<td>
+		polynomial
+		</td>
+		<td>
+
+		</td>
+		<td>
+
+		</td>
+	</tr>
+	<tr>
+		<td>
+			O(2^n)
+		</td>
+		<td>
+			exponential
+		</td>
+		<td>
+			This means that its running time will double every time you add another element to the input.  An algorithm with this running time is generally considered to be too slow to be useful for anything but the smallest of problems.  
+		</td>
+		<td>
+
+		</td>
+	</tr>
+	<tr>
+		<td>
+		O(n!)
+		</td>
+		<td>
+		factorial
+		</td>
+		<td>
+ 			If the algorithms take an input of size n, the total time will be proportional to n*(n-1)*(n-2)*...*2*1.  For example, if an algorithm with this running time were to take 8 elements in its input, the number of steps would be proportional to 8*7*6*5*4*3*2*1 = 40320.  When the input size reaches 15, the number of steps may exceed 1 trillion.
+		</td>
+		<td>
+			Calculate fibonacci numbers recursively
+		</td>
+	</tr>
+</tbody>
+</table>
+
+
+<hr>
+<h3>Computational complexity theory</h3>
+<table class="table table-bordered table-striped">
+<thead><tr><td>Complexity Theory</td><td>Description</td></tr></thead>
+<tbody>
+<tr>
+<td>NP-hard<br/>
+<a href="http://en.wikipedia.org/wiki/NP-hard">wiki</a>
+</td>
+<td>NP-hard (Non-deterministic Polynomial-time hard), in computational complexity theory, is a class of problems that are, informally, "at least as hard as the hardest problems in NP". A problem H is NP-hard if and only if there is an NP-complete problem L that is polynomial time Turing-reducible to H (i.e., L ≤ TH). In other words, L can be solved in polynomial time by an oracle machine with an oracle for H. Informally, we can think of an algorithm that can call such an oracle machine as a subroutine for solving H, and solves L in polynomial time, if the subroutine call takes only one step to compute. NP-hard problems may be of any type: decision problems, search problems, or optimization problems.</td>
+</tr>
+
+<tr>
+<td>NP-complete<br/>
+<a href="http://en.wikipedia.org/wiki/NP-complete">wiki</a></td>
+<td>
+Although any given solution to an NP-complete problem can be verified quickly (in polynomial time), there is no known efficient way to locate a solution in the first place; indeed, the most notable characteristic of NP-complete problems is that no fast solution to them is known. That is, the time required to solve the problem using any currently known algorithm increases very quickly as the size of the problem grows. 
+</td>
+</tr>
+
+<tr>
+<td>NP<br/>
+<a href="http://en.wikipedia.org/wiki/NP_(complexity)">wiki</a></td>
+<td>Intuitively, NP is the set of all decision problems for which the instances where the answer is "yes" have efficiently verifiable proofs of the fact that the answer is indeed "yes". More precisely, these proofs have to be verifiable in polynomial time by a deterministic Turing machine. In an equivalent formal definition, NP is the set of decision problems where the "yes"-instances can be accepted in polynomial time by a non-deterministic Turing machine.</td>
+</tr>
+
+<tr>
+<td>P<br/>
+<a href="http://en.wikipedia.org/wiki/P_(complexity)">wiki</a>
+</td>
+<td>
+All decision problems that can be solved by a deterministic Turing machine using a polynomial amount of computation time, or polynomial time.
+</td>	
+</tbody>
+</table>
+
+      <footer>
+        <p>&copy; Evonsdesigns 2014</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+       <script>
+   		jQuery('a').attr("target", "_blank");
+
+    </script>
+  </body>
+</html>
